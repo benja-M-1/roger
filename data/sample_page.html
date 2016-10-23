@@ -1,0 +1,776 @@
+
+
+
+
+
+
+
+
+
+
+
+<HTML>
+
+
+
+
+
+
+
+<HEAD>
+
+
+<link rel="stylesheet" type="text/css" href="/srtm/css/global.css">
+<link rel="stylesheet" type="text/css" href="/srtm/css/univers.css">
+<link rel="stylesheet" type="text/css" href="/srtm/css/srtm.css">
+
+
+
+<script language="JavaScript" type="text/javascript" src="/srtm/javascript/commun/srtmGlobal.js"></script>
+<script language="JavaScript" type="text/javascript" src="/srtm/javascript/commun/srtmNav.js"></script>
+<script language="JavaScript" type="text/javascript" src="/srtm/javascript/commun/srtmControleChamps.js"></script>
+
+<title>
+Paris Tennis, le syst&egrave;me de r&eacute;servation des tennis municipaux - Service en ligne - Paris.fr
+</title>
+
+<meta name="keywords" content="'tennis, ParisTennis, Ville, Mairie, Paris, réservation , internet, serveur, vocal, municipaux, courts '">
+</meta>
+
+
+
+    <script language="JavaScript" type="text/javascript" src="/srtm/javascript/reservation/reservationCreneauListe.js"></script>
+
+  <script language="JavaScript">
+    function initPage() {
+      openMenu("Réservation");
+    }
+
+   function nouvelleRecherche() {
+        document.forms[0].action="/srtm/reservationCreneauInit.action";
+        document.forms[0].submit();
+       }
+
+  </script>
+</HEAD>
+
+<BODY marginheight='0' marginwidth='0' onload="initPage()">
+
+
+
+<a name="top"></a>
+<div class="tdcenter">
+<script language="JavaScript" type="text/javascript">
+twidth("/srtm/images/common/p.gif");
+</script>
+
+
+<script language="Javascript">
+function ouvrirPage(url)
+{
+window.open(url,"popup","");
+}
+
+function lien(url)
+{
+if ((window.opener!=null)&&(!window.opener.closed))
+  {
+  window.opener.location.href=""+url+"";
+  }
+  else
+  {
+  ouvrirPage(url);
+  }
+}
+
+function popupConfirmation(strLibelle)
+{
+var arg = strLibelle;
+var ans = window.showModalDialog("/srtm/jsp/web/commun/srtmPopupConfirmation.jsp",arg,"dialogHeight:190px; dialogWidth:340px; dialogTop:300px, dialogLeft:180px; edge: Sunken; center: Yes; help: No; resizable: No; status: No;");
+
+  if (ans=="oui")
+  return true;
+  else
+  return false;
+}
+
+
+/*
+//rgha:marqueurs XITI pour v2
+
+hsh = new Date();
+hsd = document;
+hsr = hsd.referrer.replace(/[<>]/g, '');
+hsi = '<img width="1" height="1" src="http://logi6.xiti.com/hit.xiti?s=122296&s2=40';
+hsi += '&p=';
+hsi += '&hl=' + hsh.getHours() + 'x' + hsh.getMinutes() + 'x' + hsh.getSeconds();
+
+if(parseFloat(navigator.appVersion)>=4)
+{Xiti_s=screen;hsi += '&r=' + Xiti_s.width + 'x' + Xiti_s.height + 'x' + Xiti_s.pixelDepth + 'x' + Xiti_s.colorDepth;}
+ hsd.writeln(hsi + '&ref=' + hsr.replace(/&/g, '$') + '"> ');
+*/
+
+</script>
+
+<!--
+<noscript>
+<img width="1" height="1" src="http://logi6.xiti.com/hit.xiti?s=122296&s2=40&p=&" >
+</noscript>
+ -->
+
+<table cellpadding="0" cellspacing="0" width="75%" summary="" border="0">
+
+
+<!-- debut 1ère partie de l'entête -->
+<tr valign="top">
+	<td width="140">
+		<table cellpadding="0" cellspacing="0" width="100%" summary="" border="0">
+		<tr>
+			<td><a href="#" title="paris.fr" onClick="javascript:lien('http://paris.fr')" >
+          <img src="/srtm/images/entete/logo.gif"  border="0" alt="Accueil Paris.fr"></a>
+      </td>
+		</tr>
+		</table>
+	</td>
+
+	<td width="100%" style="background-image: url(/srtm/images/entete/bandeau_haut_bgd.gif);">
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" summary="">
+		  <tr valign="top">
+
+			<td>
+			  	<table width="100%">
+			  	<tr>
+			  	<td width="100%"><span class="srvlignelnk"><a href="http://www.paris.fr/portail/pratique/Portal.lut?page_id=9685 " target="_blank"> >> TOUS LES SERVICES EN LIGNE</a></span></td>
+			  	<td><img src="/srtm/images/entete/bandeau_haut_tennis.gif"  alt="Paris Tennis"></td>
+			  	</tr>
+			  	</table>
+		  	</td>
+		  </tr>
+		</table>
+	</td>
+</tr>
+<!-- fin de la 1ère partie de l'entête -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr valign="top">
+	<td width="140" id="left" height="100%">
+		<script type="text/javascript">document.write(wpbeg())</script>
+
+		<!-- DETAILS COMPTE -->
+		<script type="text/javascript">document.write(wbbeg(0, 'Votre compte', 'Votre compte'))</script>
+  	<table cellpadding="0" cellspacing="0" border="0" summary="">
+    	<tr>
+    		<td class="bgwhite">
+    			<h2><img src="/srtm/images/common/p.gif" width="1" height="1" alt="menu de navigation"></h2>
+    			<img src="/srtm/images/p.gif" width="9" height="12" alt=" ">
+    		</td>
+    	</tr>
+  	</table>
+    <table cellpadding="0" cellspacing="0" border="0" width="140" id="titre" summary="">
+    	<tr>
+    		<td class="libelle" width="126">
+    			<script type="text/javascript">document.write(wbtitle('Votre compte'))</script>
+    			<noscript><div>Votre compte</div></noscript>
+    		</td>
+    		<td valign="top" class="libelle" width="14">
+    			<script type="text/javascript">document.write(wbdown('/srtm/images/menu/left-titre-down.gif'))</script>
+    			<noscript><img src="/srtm/images/menu/left-titre-down.gif" width="14" height="14" alt=" "></noscript>
+       	</td>
+    	</tr>
+      <tr>
+    		<td class="titrebottom" colspan="2"><img src="/srtm/images/common/p.gif" width="1" height="2" alt=" "></td>
+    	</tr>
+   	</table>
+
+		<script type="text/javascript">document.write(wbend())</script>
+		<script type="text/javascript">document.write(wbbeg(1, 'Votre compte'))</script>
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" id="cont" summary="">
+      <tr><td class="first"><div><a href="/srtm/compteConsulterDonneePersoInit.action" title="Consultation du profil">Consultation du profil</a></div></td></tr>
+  		<tr><td class="first"><div><a href="/srtm/compteConsulterDonneePerso.action" title="Modification du profil">Modification du profil</a></div></td></tr>
+      <tr><td class="first"><div><a href="/srtm/compteModifierMotDePasseInit.action" title="Modifier votre code d'accès">Modification du code d'accès</a></div></td></tr>
+    </table>
+		<script type="text/javascript">document.write(wbend())</script>
+
+		<!-- RESERVATION -->
+		<script type="text/javascript">document.write(wbbeg(0, 'Réservation', 'Réservation'))</script>
+		<table cellpadding="0" cellspacing="0" border="0" summary="">
+		<tr>
+			<td class="bgwhite">
+				<h2><img src="/srtm/images/common/p.gif" width="1" height="1" alt="menu de navigation"></h2>
+				<img src="/srtm/images/p.gif" width="9" height="12" alt=" ">
+			</td>
+		</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0" border="0" width="140" id="titre" summary="">
+		<tr>
+			<td class="libelle" width="126">
+				<script type="text/javascript">document.write(wbtitle('Réservation'))</script>
+				<noscript><div>Réservation</div></noscript>
+			</td>
+			<td valign="top" class="libelle" width="14">
+				<script type="text/javascript">document.write(wbdown('/srtm/images/menu/left-titre-down.gif'))</script>
+				<noscript><img src="/srtm/images/menu/left-titre-down.gif" width="14" height="14" alt=" "></noscript>
+			</td>
+		</tr>
+		<tr>
+			<td class="titrebottom" colspan="2"><img src="/srtm/images/common/p.gif" width="1" height="2" alt=" "></td>
+		</tr>
+		</table>
+
+		<script type="text/javascript">document.write(wbend())</script>
+		<script type="text/javascript">document.write(wbbeg(1, "Réservation"))</script>
+
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" id="cont" summary="">
+		<tr><td class="first"><div><a href="/srtm/reservationCreneauInit.action" title="Nouvelle recherche">Nouvelle recherche</a></div></td></tr>
+		<tr><td class="first"><div><a href="/srtm/reservationRechercheTennisPreferes.action" title="Mes tennis pr&eacute;f&eacute;r&eacute;s">Tennis pr&eacute;f&eacute;r&eacute;s</a></div></td></tr>
+		</table>
+
+		<script type="text/javascript">document.write(wbend())</script>
+
+		<script type="text/javascript">document.write(wpend())</script>
+
+    <!-- Tennis -->
+		<script type="text/javascript">document.write(wbbeg(0, 'Tennis municipaux', 'Tennis municipaux'))</script>
+		<table cellpadding="0" cellspacing="0" border="0" summary="">
+		<tr>
+			<td class="bgwhite">
+				<h2><img src="/srtm/images/common/p.gif" width="1" height="1"></h2>
+				<img src="/srtm/images/p.gif" width="9" height="12" alt=" ">
+			</td>
+		</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0" border="0" width="140" id="titre" summary="">
+		<tr>
+			<td class="libelle" width="126">
+				<script type="text/javascript">document.write(wbtitle('Tennis municipaux'))</script>
+				<noscript><div>Tennis municipaux</div></noscript>
+			</td>
+			<td valign="top" class="libelle" width="14">
+				<script type="text/javascript">document.write(wbdown("/srtm/images/menu/left-titre-down.gif"))</script>
+				<noscript><img src="/srtm/images/menu/left-titre-down.gif" width="14" height="14" alt=" "></noscript>
+			</td>
+		</tr>
+		<tr>
+			<td class="titrebottom" colspan="2"><img src="/srtm/images/common/p.gif" width="1" height="2" alt=" "></td>
+		</tr>
+		</table>
+
+		<script type="text/javascript">document.write(wbend())</script>
+		<script type="text/javascript">document.write(wbbeg(1, 'Tennis municipaux'))</script>
+
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" id="cont" summary="">
+      <tr><td class="first"><div><a href="/srtm/tennisCarteTennisInit.action" title="Carte de localisation des tennis">Localisation des tennis</a></div></td></tr>
+      <tr><td class="first"><div><a href="/srtm/tennisListeTennis.action" title="Liste des tennis ouverts &agrave; la r&eacute;servation">Liste des tennis</a></div></td></tr>
+		</table>
+
+		<script type="text/javascript">document.write(wbend())</script>
+
+ 		<!-- informations pratiques -->
+		<script type="text/javascript">document.write(wbbeg(0, 'Infos pratiques', 'Infos pratiques'))</script>
+		<table cellpadding="0" cellspacing="0" border="0" summary="">
+		<tr>
+			<td class="bgwhite">
+				<h2><img src="/srtm/images/common/p.gif" width="1" height="1"></h2>
+				<img src="/srtm/images/p.gif" width="9" height="12" alt=" ">
+			</td>
+		</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0" border="0" width="140" id="titre" summary="">
+		<tr>
+			<td class="libelle" width="126">
+				<script type="text/javascript">document.write(wbtitle('Infos pratiques'))</script>
+				<noscript><div>Infos pratiques</div></noscript>
+			</td>
+			<td valign="top" class="libelle" width="14">
+				<script type="text/javascript">document.write(wbdown("/srtm/images/menu/left-titre-down.gif"))</script>
+				<noscript><img src="/srtm/images/menu/left-titre-down.gif" width="14" height="14" alt=" "></noscript>
+			</td>
+		</tr>
+		<tr>
+			<td class="titrebottom" colspan="2"><img src="/srtm/images/common/p.gif" width="1" height="2" alt=" "></td>
+		</tr>
+		</table>
+
+		<script type="text/javascript">document.write(wbend())</script>
+		<script type="text/javascript">document.write(wbbeg(1, 'Infos pratiques'))</script>
+
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" id="cont" summary="">
+        <tr><td class="first"><div><a href="/srtm/staticCommentReserver.action" title="Comment réserver">Comment réserver</a></div></td></tr>
+        <tr><td class="first"><div><a href="/srtm/staticGuideApresAuthentification.action" title="Guide d'utilisation">Guide d'utilisation</a></div></td></tr>
+        <tr><td class="first"><div><a href="/srtm/staticTarifs.action" title="Tarifs et conditions d'acc&egrave;s">Tarifs</a></div></td></tr>
+        <tr><td class="first"><div><a href="/srtm/staticReglement.action" title="R&egrave;glement ParisTennis">R&egrave;glement ParisTennis</a></div></td></tr>
+		</table>
+
+		<script type="text/javascript">document.write(wbend())</script>
+
+		<script type="text/javascript">document.write(wpend())</script>
+
+    <br>
+		<table cellpadding="0" cellspacing="0" border="0" width="95%" summary="" align="right">
+		<tr></tr>
+    <tr><td><img src="/srtm/images/menu/logo_srtm.jpg" title="Paris Tennis"></td></tr>
+		</table>
+
+	 </td>
+
+
+
+
+<!-- début de la 2ème partie de l'entête -->
+<td width="100%">
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" summary="">
+	<tr valign="top">
+		<td width="100%"><!-- debut corps de page -->
+
+    </td>
+  </tr>
+
+			<tr>
+				<td colspan="2">
+
+<!-- fin de la 2ème partie de l'entête -->
+
+
+<!-- début de la page centrale -->
+         <form name="reservationCreneauCriteresForm" method="post" action="/srtm/reservationCreneauListeReload.action">
+          <input type="hidden" name="libelleReservation" value="" />
+          <input type="hidden" name="rechercheElargie" value=""/>
+          <input type="hidden" name="cle" value=""/>
+
+					<table cellpadding="0" cellspacing="0" border="0" width="100%" summary="">
+					<tr valign="top">
+
+
+
+
+
+
+
+
+
+
+
+<td>&nbsp;</td>
+<td colspan='3' width='100%'>
+<!-- liens de navigation -->
+<table cellpadding='0' cellspacing='0' border='0' width='100%' summary=''>
+<tr>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td id='prog'>
+<h1>
+  <a href='#' title='tennis.paris.fr' onClick="javascript:lien('http://tennis.paris.fr ')">
+    <img src='/srtm/images/main/pic_prog.gif' width='16' height='16' border='0' alt='tennis.paris.fr'>
+  </a>
+  <a href='/srtm/reservationAccueil.action' title=''>&gt; ParisTennis </a> <a href="/srtm/reservationCreneauInit.action">&gt; Rechercher un court</a> &gt; Liste des courts disponibles</h1>
+</td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+
+
+
+
+
+
+
+<table cellpadding="3" cellspacing="0" border="0" summary="" width="100%">
+ <br>
+ <tr >
+    <td width="15%">
+    </td>
+    <td align="center" width="60%" >
+            Benjamin&nbsp;GRANDFOND
+    </td>
+
+    <td align="right" width="15%">
+
+                <a href="/srtm/deconnexionAccueil.action" title="D&eacute;connexion"><span class="baquo">&raquo; D&eacute;connexion</span></a>
+
+    </td>
+ </tr>
+<tr>
+<td>&nbsp;</td>
+<td align="center">
+&nbsp;
+
+			  Derni&egrave;re connexion effectu&eacute;e le :23/10/2016 17:12:07
+
+
+</td>
+<td>&nbsp;</td>
+
+</tr>
+
+</table>
+
+
+
+
+
+                <span class="baquo">
+                  <UL><LI>Vous n'avez pas de r&eacute;servation en cours</LI></UL>
+                </span>
+
+
+
+
+
+
+
+
+<!-- Titre de la page centrale-->
+<table cellpadding="1" cellspacing="0" border="0" width="100%" summary="">
+  <tr><td><h1 class="style7">Liste des courts disponibles</h1></td></tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" summary="">
+  <tr><td class="fndhtitre"><img src="/srtm/images/common/img/p.gif" width="1" height="3" alt=" "></td></tr>
+  <tr><td class="sfndhtitre"><img src="/srtm/images/common/img/p.gif" width="1" height="1" alt=" "></td></tr>
+  <tr><td><img src="/srtm/images/common/img/p.gif" width="1" height="12" alt=" "></td></tr>
+</table>
+
+
+							<!-- Contenu de la page centrale -->
+                  Les crit&egrave;res sont :<br>
+
+
+
+
+
+
+
+                        	 -
+                             Tous les arrondissements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 	-
+                    le
+                    24/10/2016
+
+
+
+
+                  	-
+                    pour la plage horaire
+                    Soirée (18h-21h)
+
+
+
+
+
+
+                 <br>
+                 <br>
+
+                  <span class="pagebanner">73 &eacute;l&eacute;ment(s) trouv&eacute;(s), affichage des &eacute;l&eacute;ments 1 &agrave; 20.</span><span class="pagelinks">[1er/Précédent] <strong>1</strong>, <a href="/srtm/jsp/web/reservation/reservationCreneauListe.jsp?plageHoraireDispo=18%4021&amp;actionInterne=recherche&amp;arrondissement3=&amp;arrondissement2=&amp;champ=&amp;dateDispo=24%2F10%2F2016&amp;arrondissement=&amp;tousArrondissements=on&amp;heureDispo=&amp;d-41734-p=2&amp;libellePlageHoraire=Soir%C3%A9e+%2818h-21h%29&amp;revetement=&amp;provenanceCriteres=true&amp;nomCourt=&amp;tennisArrond=&amp;court=" title="Allez à la page 2">2</a>, <a href="/srtm/jsp/web/reservation/reservationCreneauListe.jsp?plageHoraireDispo=18%4021&amp;actionInterne=recherche&amp;arrondissement3=&amp;arrondissement2=&amp;champ=&amp;dateDispo=24%2F10%2F2016&amp;arrondissement=&amp;tousArrondissements=on&amp;heureDispo=&amp;d-41734-p=3&amp;libellePlageHoraire=Soir%C3%A9e+%2818h-21h%29&amp;revetement=&amp;provenanceCriteres=true&amp;nomCourt=&amp;tennisArrond=&amp;court=" title="Allez à la page 3">3</a>, <a href="/srtm/jsp/web/reservation/reservationCreneauListe.jsp?plageHoraireDispo=18%4021&amp;actionInterne=recherche&amp;arrondissement3=&amp;arrondissement2=&amp;champ=&amp;dateDispo=24%2F10%2F2016&amp;arrondissement=&amp;tousArrondissements=on&amp;heureDispo=&amp;d-41734-p=4&amp;libellePlageHoraire=Soir%C3%A9e+%2818h-21h%29&amp;revetement=&amp;provenanceCriteres=true&amp;nomCourt=&amp;tennisArrond=&amp;court=" title="Allez à la page 4">4</a> [<a href="/srtm/jsp/web/reservation/reservationCreneauListe.jsp?plageHoraireDispo=18%4021&amp;actionInterne=recherche&amp;arrondissement3=&amp;arrondissement2=&amp;champ=&amp;dateDispo=24%2F10%2F2016&amp;arrondissement=&amp;tousArrondissements=on&amp;heureDispo=&amp;d-41734-p=2&amp;libellePlageHoraire=Soir%C3%A9e+%2818h-21h%29&amp;revetement=&amp;provenanceCriteres=true&amp;nomCourt=&amp;tennisArrond=&amp;court=">Suivant</a>/<a href="/srtm/jsp/web/reservation/reservationCreneauListe.jsp?plageHoraireDispo=18%4021&amp;actionInterne=recherche&amp;arrondissement3=&amp;arrondissement2=&amp;champ=&amp;dateDispo=24%2F10%2F2016&amp;arrondissement=&amp;tousArrondissements=on&amp;heureDispo=&amp;d-41734-p=4&amp;libellePlageHoraire=Soir%C3%A9e+%2818h-21h%29&amp;revetement=&amp;provenanceCriteres=true&amp;nomCourt=&amp;tennisArrond=&amp;court=">Dernier</a>]</span>
+<table class="normal">
+<thead>
+<tr>
+<th class="sortable">
+<a href="/srtm/jsp/web/reservation/reservationCreneauListe.jsp?plageHoraireDispo=18%4021&amp;actionInterne=recherche&amp;arrondissement3=&amp;arrondissement2=&amp;champ=&amp;dateDispo=24%2F10%2F2016&amp;arrondissement=&amp;tousArrondissements=on&amp;heureDispo=&amp;d-41734-p=1&amp;libellePlageHoraire=Soir%C3%A9e+%2818h-21h%29&amp;revetement=&amp;d-41734-s=0&amp;provenanceCriteres=true&amp;nomCourt=&amp;tennisArrond=&amp;d-41734-o=2&amp;court=">Tennis</a></th>
+<th class="sortable">
+<a href="/srtm/jsp/web/reservation/reservationCreneauListe.jsp?plageHoraireDispo=18%4021&amp;actionInterne=recherche&amp;arrondissement3=&amp;arrondissement2=&amp;champ=&amp;dateDispo=24%2F10%2F2016&amp;arrondissement=&amp;tousArrondissements=on&amp;heureDispo=&amp;d-41734-p=1&amp;libellePlageHoraire=Soir%C3%A9e+%2818h-21h%29&amp;revetement=&amp;d-41734-s=1&amp;provenanceCriteres=true&amp;nomCourt=&amp;tennisArrond=&amp;d-41734-o=2&amp;court=">Arrondissement</a></th>
+<th class="sortable">
+<a href="/srtm/jsp/web/reservation/reservationCreneauListe.jsp?plageHoraireDispo=18%4021&amp;actionInterne=recherche&amp;arrondissement3=&amp;arrondissement2=&amp;champ=&amp;dateDispo=24%2F10%2F2016&amp;arrondissement=&amp;tousArrondissements=on&amp;heureDispo=&amp;d-41734-p=1&amp;libellePlageHoraire=Soir%C3%A9e+%2818h-21h%29&amp;revetement=&amp;d-41734-s=2&amp;provenanceCriteres=true&amp;nomCourt=&amp;tennisArrond=&amp;d-41734-o=2&amp;court=">Date</a></th>
+<th class="sortable">
+<a href="/srtm/jsp/web/reservation/reservationCreneauListe.jsp?plageHoraireDispo=18%4021&amp;actionInterne=recherche&amp;arrondissement3=&amp;arrondissement2=&amp;champ=&amp;dateDispo=24%2F10%2F2016&amp;arrondissement=&amp;tousArrondissements=on&amp;heureDispo=&amp;d-41734-p=1&amp;libellePlageHoraire=Soir%C3%A9e+%2818h-21h%29&amp;revetement=&amp;d-41734-s=3&amp;provenanceCriteres=true&amp;nomCourt=&amp;tennisArrond=&amp;d-41734-o=2&amp;court=">Heure</a></th>
+<th class="sortable">
+<a href="/srtm/jsp/web/reservation/reservationCreneauListe.jsp?plageHoraireDispo=18%4021&amp;actionInterne=recherche&amp;arrondissement3=&amp;arrondissement2=&amp;champ=&amp;dateDispo=24%2F10%2F2016&amp;arrondissement=&amp;tousArrondissements=on&amp;heureDispo=&amp;d-41734-p=1&amp;libellePlageHoraire=Soir%C3%A9e+%2818h-21h%29&amp;revetement=&amp;d-41734-s=4&amp;provenanceCriteres=true&amp;nomCourt=&amp;tennisArrond=&amp;d-41734-o=2&amp;court=">Court</a></th>
+<th width="10%" class="sortable" align="center">
+<a href="/srtm/jsp/web/reservation/reservationCreneauListe.jsp?plageHoraireDispo=18%4021&amp;actionInterne=recherche&amp;arrondissement3=&amp;arrondissement2=&amp;champ=&amp;dateDispo=24%2F10%2F2016&amp;arrondissement=&amp;tousArrondissements=on&amp;heureDispo=&amp;d-41734-p=1&amp;libellePlageHoraire=Soir%C3%A9e+%2818h-21h%29&amp;revetement=&amp;d-41734-s=5&amp;provenanceCriteres=true&amp;nomCourt=&amp;tennisArrond=&amp;d-41734-o=2&amp;court=">Voir la fiche</a></th>
+<th class="sortable">
+<a href="/srtm/jsp/web/reservation/reservationCreneauListe.jsp?plageHoraireDispo=18%4021&amp;actionInterne=recherche&amp;arrondissement3=&amp;arrondissement2=&amp;champ=&amp;dateDispo=24%2F10%2F2016&amp;arrondissement=&amp;tousArrondissements=on&amp;heureDispo=&amp;libellePlageHoraire=Soir%C3%A9e+%2818h-21h%29&amp;revetement=&amp;d-41734-s=6&amp;provenanceCriteres=true&amp;nomCourt=&amp;tennisArrond=&amp;d-41734-o=2&amp;court=">R&eacute;server</a></th></tr></thead>
+<tbody>
+<tr class="odd">
+<td>Edouard Pailleron</td>
+<td>19</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°3</td>
+<td width="10%" align="center"><a href="javascript:doSelect('3261@24/10/2016 18h00@16@183@240@64','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('3261@24/10/2016 18h00@16@183@240@64','/srtm','Court n°3 du tennis Edouard Pailleron le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="even">
+<td>Edouard Pailleron</td>
+<td>19</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°4</td>
+<td width="10%" align="center"><a href="javascript:doSelect('3262@24/10/2016 18h00@16@183@240@64','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('3262@24/10/2016 18h00@16@183@240@64','/srtm','Court n°4 du tennis Edouard Pailleron le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="odd">
+<td>Jandelle</td>
+<td>19</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°1</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1465@24/10/2016 18h00@16@178@155@64','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1465@24/10/2016 18h00@16@178@155@64','/srtm','Court n°1 du tennis Jandelle le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="even">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°1</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1167@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1167@24/10/2016 18h00@14@71@126@57','/srtm','Court n°1 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="odd">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°2</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1168@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1168@24/10/2016 18h00@14@71@126@57','/srtm','Court n°2 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="even">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°3</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1169@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1169@24/10/2016 18h00@14@71@126@57','/srtm','Court n°3 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="odd">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°4</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1170@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1170@24/10/2016 18h00@14@71@126@57','/srtm','Court n°4 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="even">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°7</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1173@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1173@24/10/2016 18h00@14@71@126@57','/srtm','Court n°7 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="odd">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°8</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1174@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1174@24/10/2016 18h00@14@71@126@57','/srtm','Court n°8 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="even">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°9</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1175@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1175@24/10/2016 18h00@14@71@126@57','/srtm','Court n°9 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="odd">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°10</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1176@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1176@24/10/2016 18h00@14@71@126@57','/srtm','Court n°10 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="even">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°12</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1178@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1178@24/10/2016 18h00@14@71@126@57','/srtm','Court n°12 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="odd">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°13</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1179@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1179@24/10/2016 18h00@14@71@126@57','/srtm','Court n°13 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="even">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°14</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1180@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1180@24/10/2016 18h00@14@71@126@57','/srtm','Court n°14 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="odd">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°15</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1181@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1181@24/10/2016 18h00@14@71@126@57','/srtm','Court n°15 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="even">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°16</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1182@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1182@24/10/2016 18h00@14@71@126@57','/srtm','Court n°16 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="odd">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°17</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1183@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1183@24/10/2016 18h00@14@71@126@57','/srtm','Court n°17 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="even">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°18</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1184@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1184@24/10/2016 18h00@14@71@126@57','/srtm','Court n°18 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="odd">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°19</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1185@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1185@24/10/2016 18h00@14@71@126@57','/srtm','Court n°19 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr>
+<tr class="even">
+<td>La Faluère</td>
+<td>12</td>
+<td>24/10/2016</td>
+<td>18h00</td>
+<td>Court n°20</td>
+<td width="10%" align="center"><a href="javascript:doSelect('1186@24/10/2016 18h00@14@71@126@57','/srtm')"><img src='/srtm/images/main/detail.gif'></a></td>
+<td><a href="javascript:doReservation('1186@24/10/2016 18h00@14@71@126@57','/srtm','Court n°20 du tennis La Faluère le lundi 24 octobre 2016 à 18h00')"><img src='/srtm/images/main/check.gif'></a></td></tr></tbody></table>
+
+
+                  <br><br>
+
+
+					<table cellpadding="0" cellspacing="0" border="0" width="100%" summary="">
+            <tr><br>
+                  <input type="button" name="valider" value="Nouvelle Recherche" onclick="nouvelleRecherche()" class="submit">
+            </tr>
+            <tr>
+            </tr>
+					</table>
+
+							<!-- Fin du Contenu de la page centrale -->
+
+					</tr>
+					</table>
+        </form>
+<!-- fin de la page centrale -->
+
+
+
+
+
+
+
+
+
+
+				</td>
+			</tr>
+			<tr><td>&nbsp;</td></tr>
+			</table>
+		</td>
+	</tr>
+
+<!--Début du pied de page-->
+<tr>
+	<td class="bgu"><img src='/srtm/images/common/img/p.gif' width="1" height="14" alt=" "></td>
+	<td class="bgu">
+		<table cellpadding="1" cellspacing="0" border="0" width="100%" summary="">
+		<tr>
+			<td id="footera" width="100%"><center>|<a href="/srtm/staticContactInit.action" title="Contactez-nous">Contacts</a>|</center></td>
+			<td id="footerb" class="tdright" nowrap="true"><a href="#top" title="Haut de page"><img src='/srtm/images/footer/top.gif' border="0" alt="">Haut de page</a><img src='/srtm/images/common/img/p.gif' width="40" height="1" alt=" "></td>
+		</tr>
+		</table>
+
+		<script language="javascript" type="text/javascript">
+			bottomwidth();
+		</script>
+	</td>
+</tr>
+<!--Fin du pied de page-->
+
+	</table>
+</div>
+
+<!-- 
+	xPilot 41616 / FA0040 : Les statistiques actuelles sont fournies par le logiciel  Google.Analytics
+-->
+
+<!-- BEGIN GOOGLE TAG -->
+<link href="https://teleservices.paris.fr/cnil_tools/cnil.css" rel="stylesheet">
+<script type="text/javascript" src="/srtm/javascript/commun/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://teleservices.paris.fr/cnil_tools/cnil.js" charset="UTF-8"></script>
+
+<script type="text/javascript">
+="/srtm
+	if( $.cookie('cookie-cnil-parisfr') ){
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1961755-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	}
+
+</script>
+<!-- END GOOGLE TAG -->
+
+</BODY>
+
+</HTML>
