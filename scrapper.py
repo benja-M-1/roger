@@ -20,25 +20,38 @@ def get_slots(startAtDate, startAtHour='18', district=None):
 	payload = {
 		'provenanceCriteres': True,
 		'actionInterne': 'recherche',
-		'dateDispo': startAtDate,
-		'heureDispo': startAtHour,
+		'dateDispo': '10/03/2017',
+		'heureDispo': 18,
 		'courtEclaire': 'on',
+		'tousArrondissements': 'on',
+		'libellePlageHoraire':'',
+		'nomCourt':'',
+		'actionInterne':'recherche',
+		'champ':'',
+		'tennisArrond':'',
+		'arrondissement':'',
+		'arrondissement2':'',
+		'arrondissement3':'',
+		'plageHoraireDispo':'',
+		'revetement':'',
+		'court':''
 	}
 
-	if not district:
-		payload['arrondissement'] = district
-	else:
-		payload['tousArrondissements'] = 'on'
+	print(payload)
 
 	r = s.post(
 		'https://teleservices.paris.fr/srtm/reservationCreneauListe.action',
-		data = payload
+		data = payload,
+		headers = {
+			'referer': 'https://teleservices.paris.fr/srtm/reservationCreneauListe.action'
+		}
 	)
 
+	print(r.text)
 	soup = BeautifulSoup(r.text, 'html.parser')
 
 	tab_header_el = soup.find('th', class_="sortable")
-	print(tab_header_el)
+
 	table = tab_header_el.find_parent('table')
 	tbody = table.find('tbody')
 	data = tbody.find_all('tr')
